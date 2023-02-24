@@ -10,7 +10,7 @@ const images = [
     Slider1, Slider2, Slider3, Slider4
   ];
 
-export default function App() {
+export default function Slider() {
   const [value, setValue] = React.useState(0);
 
   useEffect(() => {

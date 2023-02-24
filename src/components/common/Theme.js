@@ -14,14 +14,14 @@ export const Theme = {
             color: '#d6c5c5'
         },
         small: {
-            width: '80px;'
+            width: '100px;'
 
         },
         medium: {
-            width: '100px;'
+            width: '140px;'
         },
         large: {
-            width: '150px;'
+            width: '190px;'
         }
 
         

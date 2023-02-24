@@ -5,11 +5,10 @@ import Button from '../common/Button'
 export default function Nav () {
   return (
     <Navcontainer>
-        <h1>Slm</h1>
-        <Button variant='primary' size='small'>MENY</Button>
-        <Button variant='primary' size='small'>BOOKING</Button>
-        <Button variant='primary' size='small'>OM OSS</Button>
-        <Button variant='primary' size='small'>KONTAkT</Button>
+        <Button variant='primary' size='medium'>MENY</Button>
+        <Button variant='primary' size='medium'>BOOKING</Button>
+        <Button variant='primary' size='medium'>OM OSS</Button>
+        <Button variant='primary' size='medium'>KONTAkT</Button>
     </Navcontainer>
   )  
 }

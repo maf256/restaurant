@@ -6,21 +6,24 @@ import { Theme } from "./Theme"
 
 export default function Button({ variant, size, children }) {
     return (
-        <ButtonComponent variant={variant} >
+        <ButtonComponent variant={variant} size={size}>
             {children}
         </ButtonComponent>
     )
 }
 
 const ButtonComponent = styled.button`
-    width: 160px;
+    width: ${({size})=> Theme.Button[size].width};
     height: 45px;
-    border: 2px solid black;
-    border-radius: 50px;
-    margin: 20px;
+    border: 1px solid white;
+    margin: 5px;
     background-color: ${({variant})=> Theme.Button[variant].backgroundColor};
     color: ${({variant}) => Theme.Button[variant].color};
     text-align: center;
     font-size: 14px;
     font-weight: 700;
+    :hover {
+        border-radius: 20px;
+        transition: all ease-in 0.2s;
+    }
 `

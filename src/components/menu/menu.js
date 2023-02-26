@@ -4,7 +4,6 @@ import Menulist from '../common/Data'
 
 export default function Menu()  {
     const [accordionState, setAccordionState] = useState({})
-    console.log("accordionState ", accordionState);
     
     const handleAccordionClick = (subject) => {
         const key = subject.split(' ').join('')
@@ -23,7 +22,7 @@ export default function Menu()  {
             Menulist.map((Menu, index) =>
             <Accordion key={index}>
                 <AccordionSummary onClick={() => handleAccordionClick(Menu.subject)}>
-                    <Typography key={index}>{Menu.subject}</Typography>
+                    <h3 key={index}>{Menu.subject}</h3>
                 </AccordionSummary>
                 <AccordionDetails isSelected={accordionState[Menu.subject.split(' ').join('')]} >
                     {Menu.courses.map((courses, index)=>
@@ -46,14 +45,33 @@ const MenuContainer = styled.div`
     width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    h2 {
-        color: white;
-        width: 100%;
+    margin: 100px auto;
+    h2,h3 {
+        background-color: rgb(8 31 49 / 0%);
+        font-size: 3rem;
+        color: rgb(212 208 186 );
+        margin-bottom: 3rem;
+        border-bottom: 5px solid #D4D0BA;
+        display: inline;
+
+    }
+    h3 {
+        font-size: 2rem;
+
     }
     p{
-        color: rgb(212 208 186 );
+        display: inline;
+        color: #D4D0BA;
+        background-color: rgb(8 31 49 / 0%);
+        font-size: 1.875rem;
+        ::marker {
+            unicode-bidi: isolate;
+            font-variant-numeric: tabular-nums;
+            text-transform: none;
+            text-indent: 0px !important;
+            text-align: start !important;
+            text-align-last: start !important;
+        }
     }
 
 `
@@ -65,17 +83,27 @@ const Accordion = styled.div`
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    min-height: 1rem;
+    border-left: 5px solid #D4D0BA;
+    padding: 1rem;
+    margin-bottom: 2rem;
 `
 const AccordionSummary = styled.div`
+    margin-bottom: 10px;
     
 `
 const AccordionDetails = styled.div`
     display: ${({isSelected}) => isSelected ? 'flex' : 'none'};
     flex-direction: row;
+    flex-wrap: wrap;
 `
 const Typography = styled.p`
 
 `
 const Course = styled.div`
     margin: 10px;
+    width: 350px;
+    height: 160px;
+    background-color: rgb(8,31, 49 );
+    border-radius: 3px;
 `

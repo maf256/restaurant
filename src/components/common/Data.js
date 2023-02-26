@@ -58,9 +58,6 @@ const  Menulist = [
                     price: 149
                 }
             ]
-            
-        
-
     },
     {
         subject: 'Main Courses',

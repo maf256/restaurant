@@ -13,11 +13,11 @@ export default function Location  ()  {
 
 const LocationContainer = styled.div`
     width: 100%;
-    height: 90px;
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
     h3 {
         color: white;
         font-size: 3rem;

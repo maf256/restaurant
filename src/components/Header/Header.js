@@ -29,5 +29,13 @@ const Logocontainer = styled.div`
     width: 200px;
     height: auto;
   }
+  
+  @media (max-width: 750px) {
+    height: 100px;
+    img {
+    width: 100px;
+    height: auto;
+    }
+  }
 
 `

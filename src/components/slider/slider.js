@@ -18,7 +18,7 @@ export default function Slider() {
       setValue((v) => {
         return v === 3 ? 0 : v + 1;
       });
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
   }, []);
 
@@ -35,6 +35,15 @@ const Slidercontainer = styled.div`
     height: 77vh;
     display: flex;
     justify-content: center;
+    @media (max-width: 1000px) {
+      img {
+            width: 100%;
+      }
+    }
+    @media (max-width: 750px) {
+      height: 33vh;
+    }
+
 `
 
 const Img = styled.div`
@@ -46,9 +55,7 @@ const Img = styled.div`
     background-size: contain;
     background-position: top;
 
-    @media (max-width: 1000px) {
-      width: 100%;
-    }
+
 
 
 `

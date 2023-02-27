@@ -53,6 +53,7 @@ const MenuContainer = styled.div`
         margin-bottom: 3rem;
         border-bottom: 5px solid #D4D0BA;
         display: inline;
+        width: 130px;
 
     }
     h3 {
@@ -90,6 +91,7 @@ const Accordion = styled.div`
 `
 const AccordionSummary = styled.div`
     margin-bottom: 10px;
+    cursor: pointer;
     
 `
 const AccordionDetails = styled.div`

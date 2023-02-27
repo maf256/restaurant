@@ -17,8 +17,8 @@ export default function Nav () {
 const Navcontainer = styled.nav`
     width: 100%;
     display: flex;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 35px;
+    margin-bottom: 35px;
     justify-content: center;
     flex-direction: row;
     align-items: center;

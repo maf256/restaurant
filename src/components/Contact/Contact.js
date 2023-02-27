@@ -32,6 +32,7 @@ const About = styled.div`
 const Img = styled.div`
     width: 80%;
     height: 100vh;
+    min-height: 500px;
     background-color: lightblue;
     background-image: url(${({ url }) => url });
     background-repeat: no-repeat;

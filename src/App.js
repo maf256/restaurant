@@ -4,6 +4,7 @@ import Nav from './components/Nav/Nav';
 import Contact from './components/Contact/Contact';
 import Menu from './components/menu/menu';
 import Location from './components/Location/Location';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Contact />
       <Menu />
       <Location />
+      <Footer />
       Hei
     </div>
   );

@@ -18,6 +18,7 @@ const LocationContainer = styled.div`
     align-items: center;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
+    padding: 30px 0px;
     h3 {
         color: white;
         font-size: 3rem;

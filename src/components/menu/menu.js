@@ -27,7 +27,7 @@ export default function Menu()  {
                 <AccordionDetails isSelected={accordionState[Menu.subject.split(' ').join('')]} >
                     {Menu.courses.map((courses, index)=>
                         <Course key={index}>
-                            <Typography>{index+1+' '+courses.name}</Typography>
+                            <h4>{index+1+'. '+courses.name}</h4>
                             <Typography>Allergy: {courses.allergy}</Typography>
                             <Typography>{courses.price}</Typography>
                         </Course>
@@ -58,7 +58,11 @@ const MenuContainer = styled.div`
     }
     h3 {
         font-size: 2rem;
-
+    }
+    h4 {
+        background-color: rgb(8 31 49 / 0%);
+        color: rgb(212 208 186 );
+        font-size: 1.75rem;
     }
     p{
         display: inline;
@@ -95,9 +99,9 @@ const AccordionSummary = styled.div`
     
 `
 const AccordionDetails = styled.div`
-    display: ${({isSelected}) => isSelected ? 'flex' : 'none'};
     flex-direction: row;
     flex-wrap: wrap;
+    display: ${({isSelected}) => isSelected ? 'flex' : 'none'};
 `
 const Typography = styled.p`
 
@@ -105,7 +109,14 @@ const Typography = styled.p`
 const Course = styled.div`
     margin: 10px;
     width: 350px;
-    height: 160px;
+    height: 200px;
     background-color: rgb(8,31, 49 );
     border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 10px;
+    p {
+        margin: 2px 0px;
+    }
 `

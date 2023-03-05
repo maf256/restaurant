@@ -18,8 +18,8 @@ export default function  Footer  ()  {
         </div>
         <div>
             <h3>Sosiale Medier:</h3>
-            <a><img src={Instagram}></img></a>
-            <a><img src={Facebook}></img></a>
+            <a href='https://www.osloweb.no/'><img src={Instagram} alt="web developer"></img></a>
+            <a href='https://www.osloweb.no/'><img src={Facebook} alt="web developer"></img></a>
         </div>
     </FooterContainer>
   )

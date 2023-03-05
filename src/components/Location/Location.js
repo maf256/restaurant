@@ -5,7 +5,7 @@ export default function Location  ()  {
   return (
     <LocationContainer>
         <h3>Persia Restaurant</h3>
-        <a href='https://goo.gl/maps/Hk7aAqzn77GvAAij7'>Keysers gate 7B, 0165 Oslo  <img src={SvgLocation}></img></a>
+        <a href='https://goo.gl/maps/Hk7aAqzn77GvAAij7' target="_blank">Keysers gate 7B, 0165 Oslo  <img src={SvgLocation}></img></a>
         Location
     </LocationContainer>
   )
